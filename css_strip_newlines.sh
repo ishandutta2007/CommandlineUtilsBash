@@ -11,5 +11,5 @@ MYPATH=$1
 find "$MYPATH" -name *.css > /tmp/patterns
 
 for p in $(cat /tmp/patterns); do
-    sed -i '' '/^$/d' "$p"
+    sed -i '' '/^$/d' $p
 done
