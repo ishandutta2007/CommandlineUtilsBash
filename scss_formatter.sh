@@ -1,10 +1,10 @@
 if [ $# -eq 0 ]
   then
-    $MYPATH='.'
+    $MYPATH="."
 fi
 
 MYPATH=$1
 
 npm install -g scssfmt
 
-scssfmt --recursive '$MYPATH/**/*.scss'
+scssfmt --recursive "$MYPATH/**/*.scss"
