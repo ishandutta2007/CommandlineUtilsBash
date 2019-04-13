@@ -8,7 +8,8 @@ fi
 
 MYPATH=$1
 
-find "$MYPATH" -name *.css > /tmp/patterns
+find "$MYPATH" -name *.scss > /tmp/patterns
+find "$MYPATH" -name *.css >> /tmp/patterns
 
 for p in $(cat /tmp/patterns); do
     sed -i '' '/^$/d' $p
