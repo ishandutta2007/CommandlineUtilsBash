@@ -1,1 +1,1 @@
-scssfmt input.css output.css
+scssfmt --recursive 'app/**/*.scss'
