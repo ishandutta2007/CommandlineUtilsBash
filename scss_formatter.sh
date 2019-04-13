@@ -1,6 +1,6 @@
 if [ $# -eq 0 ]
   then
-    $MYPATH="."
+    MYPATH="."
 fi
 
 MYPATH=$1
